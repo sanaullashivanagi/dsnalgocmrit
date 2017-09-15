@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>home page</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-rows: 200px 50px 600px 50px 200px;
+  grid-row-gap: 5px;
+  
+}
+div:nth-child(3) {
+  background-color: #d4d8dd;
+  
+  background-repeat: no-repeat;
+}
+div:nth-child(2) {
+ padding: 4px;
+ color: white;
+}
+.content {
+   border: 2px solid red;
+   background-color: #0e3d87;
+   font-size: 30px;
+   padding: 20px;
+   
+}
+a { /*style for link of menu*/
+ text-decoration: none;
+ 
+ border-radius: 10px;
+ margin-left: 35px;
+ color: #e8eef7;
+ background-color: #0e3d87;
+}
+.menu { /*style for menu*/
+  margin: 50px 0px 0px 330px;
+  padding: 30px;
+ 
+  
+}
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 100%) {
+    width: 100%;
+ 
+}*/
+/*.div1 {
+  border: 5px solid red;
+  height: 500px;
+  float: left; 
+  width: 600px;
+  position: absolute;
+}*/
+/*
+.div2 {
+  border: 5px solid blue;
+  height: 400px;
+  float: right;
+  width: 49%;
+  position:static;
+}*/
+
+                                                    /* for || (screen) < 992px  || */
+@media (max-width: 992px)  {
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-rows: 200px 50px 850px 50px 300px;
+  grid-row-gap: 5px;
+  
+}
+ .content {
+
+   border: 1px solid black;
+   background-color: #0e3d87;
+  
+   }
+a {   /*style for link of menu*/
+ text-decoration: none;
+ margin:30px 0px 0px 20px;
+ border-radius: 10px;
+ font-size: 28px;
+ color: #e8eef7;
+ /*background-color: #d4d8dd;*/
+ color: white;
+}
+.menu {    /*style for menu*/
+  display: inline-block;
+  position: absolute;
+  margin: 70px 0px 0px 70px;
+  padding: 20px;
+ }
+div:nth-child(3) {
+  background-color: #d4d8dd;
+  background-repeat: no-repeat;
+
+}
+div:nth-child(2) {
+ color: $000000;
+padding: 2px;
+}
+.div1 {
+  border-right: 2px solid #040404;
+  height: 800px;
+  float: left; 
+  width: 500px;
+  position: absolute;
+}
+.div2 {
+ height: 800px;
+ width: 500px;
+ float: right;
+ border-left: 2px solid #040404;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+   <div class="content">
+      <nav class="menu">
+        <a href="#Home.html" target="_self">Home</a>  
+        <a href="#student seminar.html" target="_self">Seminar-videos</a> 
+        <a href="#Course videos" target="_self">Course-videos</a>
+    
+        <a href="#Activity" target="_self">Activity log</a>
+    </nav>
+   
+   </div>
+<div class="content"><span style="color: yellow;text-shadow: 4px 4px 5px white;">*New</span>  Notification--here--</div>
+<div class="content">
+     
+        <div class="div1"></div>
+        <div class="div2"></div>
+      
+ </div>
+<div class="content"></div>
+<div class="content">
+<footer></footer>
+</div>
+</body>
+</html>
