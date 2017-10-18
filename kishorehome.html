@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> helllo world </title>
+	<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d"/>
+	<meta charset="utf-8">
+	<link rel="img" href="/imagess">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css"  href="kishorecss.css"/>
+</head>
+<body>
+	<div class="container">
+	<div >
+		<h1 class="a0"><img src="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d"/
+		>
+		  DATA STRCTURES AND APPLICATIONS</h1>
+		<table>
+		<tr  style="width: 503px;
+height: 50px;">
+			
+			<th class="a1 a2"><h2 >home</h2></th>
+			<th class="a1 a2"><a href="">home</a></th>
+			<th class="a1 a2"><a href=""><p>seminar videos</p></a></th>
+			<th class="a1 a2"><a href=""><p>course links</p></a></th>
+			<th class="a1 a2"><a href=""><p>logs</p></a></th>
+		</tr>
+		</table>
+		
+	</div>	
+	
+	<div class="container1" >
+	
+	<div style="height: 400px;margin:0 2% ">
+		<div  class="container0">
+		<div class="slides1  fade">
+
+			<img src="abc/imagess/img_bg_1.jpg" width=" 300px" height:="200px"/><div class="text">this is</div>
+		</div>
+		<div class="slides1 fade">
+			<img src="abc/imagess/img_bg_3.jpg" width=" 300px" height:="200px" /><div class="text">check out our blog.
+		Atricles written by students need your attention!!!!</br>&emsp;&emsp;&emsp;&emsp;&emsp;
+		              <a style="color:#E4DA90" href="https://lifeindatastructures.wordpress.com" target="blank">#lifeindatastructures</a></div>
+		</div>
+		<div class="slides1 fade">
+			<img src="abc/imagess/img_bg_4.jpg" width=" 300px" height:="200px"/><div class="text">data structures</div>
+		</div>
+
+		</div>
+		<div  class="container2">
+		<div class="slides2  fade">
+
+			<img src="abc/imagess/img_bg_2.jpg" width=" 500px" height:="400px"/><div class="text"  style="bottom:100px; font-size:150%">this is</div>
+		</div>
+		<div class="slides2 fade">
+			<img src="abc/imagess/img_bg_3.jpg" width=" 500px" height:="400px" /><div class="text" style="bottom:100px; font-size:150%">check out our blog.
+		Atricles written by students need your attention!!!!</br>&emsp;&emsp;&emsp;&emsp;&emsp;
+		              <a style="color:#E4DA90" href="https://lifeindatastructures.wordpress.com" target="blank">#lifeindatastructures</a></div> 
+		</div>
+		<div class="slides2 fade">
+			<img src="abc/imagess/img_bg_4.jpg" width=" 500px" height:="400px"/><div class="text" style="bottom:100px; font-size:150%">data structures</div>
+		</div>
+
+		</div>
+		<div  class="container3">
+		<div class="slides3  fade">
+
+			<img src="abc/imagess/img_bg_2.jpg" width=" 300px" height:="200px"/><div class="text">this is</div>
+		</div>
+		<div class="slides3 fade">
+			<img src="abc/imagess/img_bg_3.jpg" width=" 300px" height:="200px"/><div class="text">check out our blog.
+		Atricles written by students need your attention!!!!</br>&emsp;&emsp;&emsp;&emsp;&emsp;
+		              <a style="color:#E4DA90" href="https://lifeindatastructures.wordpress.com" target="blank">#lifeindatastructures</a></div>
+		</div>
+		<div class="slides3 fade">
+			<img src="abc/imagess/img_bg_4.jpg" width=" 300px" height:="200px"/><div class="text">data structures</div>
+		</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			
+			var indexslide=1;var indexslide2=2;var indexslide3=0;
+						f1();f2();f3();
+							
+			function f1(){
+				var i; 
+					var slide1=document.getElementsByClassName("slides1");
+					for(i=0;i<slide1.length;i++){
+						slide1[i].style.display="none";
+					}
+					if(indexslide==0||indexslide==1){indexslide=indexslide+2}
+					else if (indexslide==2){indexslide--;}
+			
+		    if (indexslide >= slide1.length) {indexslide = 0}
+		    	if(indexslide <0){insexslide=slide1.length}
+		    		
+		    slide1[indexslide].style.display = "block";
+		    setTimeout(f1, 4000);
+				}
+				
+			function f2(){
+				var i;var slide2=document.getElementsByClassName("slides2");
+					for(i=0;i<slide2.length;i++){
+						slide2[i].style.display="none";
+					}
+							if(indexslide2==0){indexslide2=indexslide2+2}
+					else if (indexslide2==2||indexslide2==1){indexslide2--;}
+		    if (indexslide2 >= slide2.length) {indexslide2 = 0}
+		    		if(indexslide2 <0){insexslide2=slide2.length}
+		    slide2[indexslide2].style.display = "block";
+		    setTimeout(f2, 4000);}
+			function f3(){
+				var i;var slide3=document.getElementsByClassName("slides3");
+					for(i=0;i<slide3.length;i++){
+						slide3[i].style.display="none";
+					}
+					if(indexslide3==0||indexslide3==1){indexslide3=indexslide3+2}
+					else if (indexslide3==2){indexslide3--;}
+		    if (indexslide3 >=slide3.length) {indexslide3 = 0}
+		    		if(indexslide3 <0){insexslide3=slide3.length}
+		    slide3[indexslide3].style.display = "block";
+		    setTimeout(f3, 4000);}
+		</script>
+	
+<!--<div class="center">
+	<img src="imagess/stack.jpeg" width=" 500px" height:="160px" style="margin-top: 20px"/><div class="text">
+	            </div>
+</div>-->
+		<div style="font-size: 120%;position: absolute">	
+		<h3>What is Data structures?</h3>
+		<img class="imgs"src="abc/imagess/data.jpeg" alt="data"
+		 width="350px" height="200px" />
+		<p style="padding: 0 10% 0 30%">Data Sturctures,as the name suggest it is organizing the data in a format so that accessing and manipulating the data becomes esy and efficient.Basic structuring of data comes with setting ordered lists of names or numbers as such. The type of data here is set of characters ie strings, intergers or real numbers (floating value). But whaen it comes to real life problems of handling data, coding for solving real life problems strings intergers will not suffice and requires datatypes which can hold multiple attributes or properties of the datatype instead of having just a name or number. Suppose we need a list of newly released cars with their specifications and the list to be updated. Data Structures provide us the power to solve this requirement in an efficient way by providing the provision to create user defined datatypes. Using this data can be sturctured as per the requirements in a way to increase efficiency of solving the problem reduce size of the code and also reduce excess memory requirements where ever possible. </p>   
+		</div>
+	</div>
+</div>
+</div>
+
+	
+</body></html>

@@ -1,0 +1,39 @@
+* {
+	box-sizing:border-box
+	}
+
+.slide2 {
+	display: none
+	}
+
+
+
+  
+
+
+
+
+
+
+  .fade {
+
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+
